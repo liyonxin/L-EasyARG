@@ -1,0 +1,41 @@
+# L-EasyARG Configuration
+
+database:
+  # Database paths (relative to database directory or absolute paths)
+  card: "L-EasyARG-database/card_database/nucleotide_fasta_protein_homolog_model.fasta"
+  plsdb: "L-EasyARG-database/plsdb/sequences.fasta"
+  mge: "L-EasyARG-database/mges/mobile-OG/mobileOG-db_beatrix-1.6.All.faa"
+  centrifuge: "L-EasyARG-database/centrifuge/p+h+v/p_compressed+h+v"
+  who_species: "L-EasyARG-database/2024-WHO-species.txt"
+
+# Analysis parameters
+threads: 56
+min_identity: 0.75
+min_coverage: 0.7
+
+# Filtering thresholds
+arg:
+  min_identity: 0.75
+  min_coverage: 0.9
+  
+plasmid:
+  min_identity: 0.7
+  min_coverage: 0.7
+  
+mge:
+  min_identity: 0.7
+  min_coverage: 0.7
+
+# Plotting options
+plotting:
+  quality: 300  # DPI
+  format: "pdf"
+  width: 12
+  height: 8
+  theme: "classic"
+
+# Output options
+output:
+  create_subdirectories: true
+  compress_intermediate: false
+  keep_temp_files: false

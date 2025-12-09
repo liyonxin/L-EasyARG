@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "L-EasyARG"
+version = "0.1.0"
+description = "A comprehensive tool for analyzing antibiotic resistance genes from metagenomic data"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {file = "LICENSE"}
+authors = [
+  {name = "L-EasyARG Team", email = "example@example.com"}
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "pandas>=1.3.0",
+    "numpy>=1.21.0",
+    "matplotlib>=3.4.0",
+    "seaborn>=0.11.0",
+    "PyYAML>=5.4.0",
+    "scipy>=1.7.0",
+    "scikit-learn>=0.24.0",
+    "biopython>=1.79",
+    "tqdm>=4.62.0",
+]
+
+[project.scripts]
+easy-arg = "easy_arg.cli:main"
+
+[project.urls]
+"Homepage" = "https://github.com/yourusername/L-EasyARG"
+"Bug Tracker" = "https://github.com/yourusername/L-EasyARG/issues"
