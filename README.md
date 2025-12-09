@@ -31,7 +31,7 @@ Ensure the following external tools are installed and available in your system P
 You can install L-EasyARG directly from the source:
 
 ```bash
-git clone https://github.com/yourusername/L-EasyARG.git
+git clone https://github.com/liyonxin/L-EasyARG.git
 cd L-EasyARG
 pip install .
 ```
@@ -99,7 +99,7 @@ The pipeline generates the following directory structure:
 
 If you use L-EasyARG in your research, please cite:
 
-> [Your Name], et al. "L-EasyARG: A comprehensive tool for analyzing antibiotic resistance genes from metagenomic data." [Journal Name], [Year].
+> Li Y, et al. "L-EasyARG: A comprehensive tool for analyzing antibiotic resistance genes from metagenomic data." 
 
 ## 📜 License
 
